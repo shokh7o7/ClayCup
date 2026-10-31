@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clay &amp; Cup – Handmade Cups</title>
+  <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/068/878/590/small_2x/steaming-coffee-mug-icon-for-beverage-cafe-breakfast-or-warm-drink-promotions-vector.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader-cup">
+      <span class="steam s1"></span>
+      <span class="steam s2"></span>
+      <span class="steam s3"></span>
+      <div class="cup-body"><span class="coffee"></span></div>
+      <span class="cup-handle"></span>
+    </div>
+    <p>Brewing...</p>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="#top" class="logo">Clay <span>&amp;</span> Cup</a>
+
+      <button type="button" class="cart-btn" id="cartOpen" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z" /><path d="M9 7a3 3 0 0 1 6 0" /></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+      <input type="checkbox" id="burger" class="burger">
+      <label for="burger" class="burger-btn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <a href="#top">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#journal">Journal</a>
+        <a href="#login">Log in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Handmade in Tashkent</p>
+          <h1>Slow mornings start with a good cup.</h1>
+          <p class="lead">Ceramic and glass cups made by hand in our small studio. Warm to hold, simple to love and made for every day.</p>
+          <div class="buttons">
+            <a href="#shop" class="btn">Shop cups</a>
+            <a href="#about" class="btn ghost">Our story</a>
+          </div>
+          <ul class="perks">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3z" /><path d="M14 10h4l3 3v3h-7" /><circle cx="7" cy="18" r="2" /><circle cx="17" cy="18" r="2" /></svg>
+              Free delivery over $40
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 6.5-7 11-7 11z" /></svg>
+              Made with love
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1771736385651-c071580a9d78?auto=format&fit=crop&w=1200&q=80" alt="Steaming cup of coffee on a wooden table">
+          <div class="hero-card">
+            <img src="https://images.unsplash.com/photo-1458819714733-e5ab3d536722?auto=format&fit=crop&w=300&q=80" alt="Blue ceramic cup">
+            <div>
+              <b>Ocean Cup</b>
+              <span>Our most loved cup</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Shop</p>
+          <h2>Cups for every moment</h2>
+          <p>Choose your favorite and add it to the cart.</p>
+        </div>
+
+        <div class="products">
+          <article class="product reveal">
+            <div class="product-photo">
+              <img src="https://images.unsplash.com/photo-1458819714733-e5ab3d536722?auto=format&fit=crop&w=900&q=80" alt="Blue ceramic cup and saucer">
+              <span class="tag">Best seller</span>
+            </div>
+            <div class="product-info">
+              <div>
+                <h3>Ocean Cup</h3>
+                <p>Glazed stoneware · 220 ml</p>
+              </div>
+              <span class="price">$24</span>
+            </div>
+            <button type="button" class="add-btn" data-name="Ocean Cup" data-price="24">Add to cart</button>
+          </article>          <article class="product reveal">
+            <div class="product-photo">
+              <img src="https://images.unsplash.com/photo-1591745742384-ee81ec590924?auto=format&fit=crop&w=900&q=80" alt="White ceramic mug">
+              
+            </div>
+            <div class="product-info">
+              <div>
+                <h3>Cloud Mug</h3>
+                <p>Matte porcelain · 300 ml</p>
+              </div>
+              <span class="price">$18</span>
+            </div>
+            <button type="button" class="add-btn" data-name="Cloud Mug" data-price="18">Add to cart</button>
+          </article>          <article class="product reveal">
+            <div class="product-photo">
+              <img src="https://images.unsplash.com/photo-1491720731493-223f97d92c21?auto=format&fit=crop&w=900&q=80" alt="White and red mug with tea">
+              <span class="tag">New</span>
+            </div>
+            <div class="product-info">
+              <div>
+                <h3>Cherry Mug</h3>
+                <p>Hand painted · 280 ml</p>
+              </div>
+              <span class="price">$20</span>
+            </div>
+            <button type="button" class="add-btn" data-name="Cherry Mug" data-price="20">Add to cart</button>
+          </article>          <article class="product reveal">
+            <div class="product-photo">
+              <img src="https://images.unsplash.com/photo-1573784540576-21ddeff9479b?auto=format&fit=crop&w=900&q=80" alt="Clear glass teacup on saucer">
+              
+            </div>
+            <div class="product-info">
+              <div>
+                <h3>Glass Teacup</h3>
+                <p>Double wall glass · 200 ml</p>
+              </div>
+              <span class="price">$26</span>
+            </div>
+            <button type="button" class="add-btn" data-name="Glass Teacup" data-price="26">Add to cart</button>
+          </article>          <article class="product reveal">
+            <div class="product-photo">
+              <img src="https://images.unsplash.com/photo-1555447014-7ead71574544?auto=format&fit=crop&w=900&q=80" alt="White mug on a white surface">
+              
+            </div>
+            <div class="product-info">
+              <div>
+                <h3>Daily Mug</h3>
+                <p>Stoneware · 350 ml</p>
+              </div>
+              <span class="price">$15</span>
+            </div>
+            <button type="button" class="add-btn" data-name="Daily Mug" data-price="15">Add to cart</button>
+          </article>          <article class="product reveal">
+            <div class="product-photo">
+              <img src="https://images.unsplash.com/photo-1615227875116-ae28a77814fb?auto=format&fit=crop&w=900&q=80" alt="Clear glass mug">
+              
+            </div>
+            <div class="product-info">
+              <div>
+                <h3>Clear Mug</h3>
+                <p>Borosilicate glass · 320 ml</p>
+              </div>
+              <span class="price">$19</span>
+            </div>
+            <button type="button" class="add-btn" data-name="Clear Mug" data-price="19">Add to cart</button>
+          </article>          <article class="product reveal">
+            <div class="product-photo">
+              <img src="https://images.unsplash.com/photo-1518881922778-bacb4debc3d7?auto=format&fit=crop&w=900&q=80" alt="Cup and saucer from above">
+              <span class="tag">Set</span>
+            </div>
+            <div class="product-info">
+              <div>
+                <h3>Morning Set</h3>
+                <p>Cup and saucer · 180 ml</p>
+              </div>
+              <span class="price">$32</span>
+            </div>
+            <button type="button" class="add-btn" data-name="Morning Set" data-price="32">Add to cart</button>
+          </article>          <article class="product reveal">
+            <div class="product-photo">
+              <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=80" alt="White mug beside cookies">
+              
+            </div>
+            <div class="product-info">
+              <div>
+                <h3>Cookie Mug</h3>
+                <p>Glazed ceramic · 260 ml</p>
+              </div>
+              <span class="price">$17</span>
+            </div>
+            <button type="button" class="add-btn" data-name="Cookie Mug" data-price="17">Add to cart</button>
+          </article>        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="about">
+      <div class="container about">
+        <div class="about-photos reveal">
+          <img class="big" src="https://images.unsplash.com/photo-1560228022-f1a3298022e9?auto=format&fit=crop&w=900&q=80" alt="A pile of ceramic cups">
+          <img class="small" src="https://images.unsplash.com/photo-1759530539862-5f8ce627d930?auto=format&fit=crop&w=900&q=80" alt="Tea poured from a floral teapot into a cup">
+        </div>
+
+        <div class="about-text reveal">
+          <p class="eyebrow">About us</p>
+          <h2>Two hands, one wheel and a lot of clay.</h2>
+          <p>Clay &amp; Cup started in 2019 in a tiny workshop with one pottery wheel. Today we are a team of five makers, but every cup is still shaped, glazed and fired by hand.</p>
+          <div class="numbers">
+            <div><b>12k</b><span>cups made</span></div>
+            <div><b>5</b><span>makers</span></div>
+            <div><b>40+</b><span>glaze colors</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Process</p>
+          <h2>How a cup is born</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Shape</h3>
+            <p>We shape each cup from soft clay on the pottery wheel.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Dry and glaze</h3>
+            <p>The cup dries for a week, then we paint it with glaze.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Fire</h3>
+            <p>Finally it is fired in the kiln at 1240 degrees.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="journal">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Journal</p>
+          <h2>News from the studio</h2>
+        </div>
+
+        <div class="posts">
+          <article class="post reveal">
+            <div class="post-photo"><img src="https://images.unsplash.com/photo-1763908161557-dffe1780dda5?auto=format&fit=crop&w=900&q=80" alt="Open book with tea and flowers"></div>
+            <p class="post-date">20 Oct 2026</p>
+            <h3>Our autumn collection is here</h3>
+            <p>Six new glazes inspired by falling leaves and warm evenings.</p>
+          </article>
+          <article class="post reveal">
+            <div class="post-photo"><img src="https://images.unsplash.com/photo-1771170223515-b174382335e5?auto=format&fit=crop&w=900&q=80" alt="A cup of tea with pink tulips"></div>
+            <p class="post-date">02 Oct 2026</p>
+            <h3>How to choose the right cup for tea</h3>
+            <p>Thin walls, wide rims and why size really matters.</p>
+          </article>
+          <article class="post reveal">
+            <div class="post-photo"><img src="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?auto=format&fit=crop&w=900&q=80" alt="A small white bowl of tea among green leaves"></div>
+            <p class="post-date">15 Sep 2026</p>
+            <h3>Pottery classes start in November</h3>
+            <p>Make your own cup with us in a friendly two hour class.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions</h2>
+        </div>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary>Are the cups dishwasher safe?</summary>
+            <p>Yes, all ceramic cups are dishwasher and microwave safe. Glass cups are dishwasher safe too.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is every cup exactly the same?</summary>
+            <p>No. Because they are handmade, each cup is a little different in shape and color.</p>
+          </details>
+          <details class="reveal">
+            <summary>How long does delivery take?</summary>
+            <p>One to two days in Tashkent and three to five days in other regions.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="login">
+      <div class="container login-wrap">
+        <div class="login-text reveal">
+          <p class="eyebrow">Account</p>
+          <h2>Welcome back</h2>
+          <p>Log in to see your orders and saved cups.</p>
+        </div>
+
+        <div class="login-card reveal">
+          <div class="login">
+            <form id="loginForm">
+              <label for="loginName">Name</label>
+              <input type="text" id="loginName" placeholder="Your name">
+
+              <label for="loginPassword">Password</label>
+              <input type="password" id="loginPassword" placeholder="Your password">
+
+              <button type="submit" class="btn">Log in</button>
+            </form>
+          </div>
+
+          <div class="welcome" id="welcome">
+            <h3>Welcome!</h3>
+            <p id="welcomeText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="logo">Clay <span>&amp;</span> Cup</a>
+        <p>Handmade cups for slow mornings and warm evenings.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop">All cups</a></li>
+          <li><a href="#shop">Mugs</a></li>
+          <li><a href="#shop">Glass cups</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#journal">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>9 Bobur Street, Tashkent</li>
+          <li>Tue – Sun, 10:00 – 19:00</li>
+          <li>hello@claycup.uz</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container copyright">
+      <span>© 2026 Clay &amp; Cup. All rights reserved.</span>
+      <span>Photos from Unsplash</span>
+    </div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart" id="cart" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>Your cart</h3>
+      <button type="button" class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+
+    <p class="cart-empty" id="cartEmpty">Your cart is empty.</p>
+    <ul class="cart-items" id="cartItems"></ul>
+
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>Total</span>
+        <b id="cartTotal">$0</b>
+      </div>
+      <button type="button" class="btn" id="checkout">Buy now</button>
+    </div>
+  </aside>
+
+  <div class="alert" id="alert" hidden>
+    <div class="alert-box" role="alertdialog" aria-modal="true" aria-labelledby="alertTitle" aria-describedby="alertText">
+      <span class="alert-icon" id="alertIcon">!</span>
+      <h3 class="alert-title" id="alertTitle"></h3>
+      <p class="alert-text" id="alertText"></p>
+      <button type="button" class="btn alert-btn" id="alertButton">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
